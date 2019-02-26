@@ -1,0 +1,11 @@
+Address: ":8080"
+DocumentRoot: /usr/share/gitweb
+InheritEnv:
+  - HTTPS
+  - GITWEB_CONFIG
+DefaultHandler: gitweb.cgi
+HandlerList:
+  - FileExt: .cgi
+    Handler: perl
+Logging:
+  Level: info
